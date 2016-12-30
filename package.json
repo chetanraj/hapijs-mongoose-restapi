@@ -1,0 +1,14 @@
+{
+  "name": "hapijs-graphql-boilerplate",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "@chetan_raj",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^16.0.1",
+    "mongoose": "^4.7.1"
+  },
+  "devDependencies": {
+    "webpack": "^1.14.0"
+  }
+}
