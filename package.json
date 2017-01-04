@@ -7,8 +7,5 @@
   "dependencies": {
     "hapi": "^16.0.1",
     "mongoose": "^4.7.1"
-  },
-  "devDependencies": {
-    "webpack": "^1.14.0"
   }
 }
