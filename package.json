@@ -9,11 +9,13 @@
     "mongoose": "^4.7.1"
   },
   "devDependencies": {
-    "flow-bin": "^0.37.4"
+    "coveralls": "^2.11.15",
+    "flow-bin": "^0.37.4",
+    "xo": "^0.17.1"
   },
   "scripts": {
     "check": "flow check",
     "start": "node app.js",
-    "test": "flow check"
+    "test": "xo && flow check"
   }
 }

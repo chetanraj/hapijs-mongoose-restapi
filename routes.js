@@ -1,37 +1,35 @@
-/*jshint esversion: 6 */
+'use strict';
 
-const Wolf = require('./models/Wolf');
+const Wolf = require('./models/wolf');
 
 module.exports = [
-  {
-      method: 'GET',
-      path: '/api/wolves',
-      handler: function (request, reply) {
-          Wolf.find(function(error, wolves) {
-              if (error) {
-                  console.error(error);
-              }
+	{
+		method: 'GET',
+		path: '/api/wolves',
+		handler(request, reply) {
+			Wolf.find({}, '', function (error, wolves) {
+				if (error) {
+					console.error(error);
+				}
 
-              reply(wolves);
-          });
-      }
-  },
-  {
-      method: ['PUT', 'POST'],
-      path: '/api/wolves/{name}',
-      handler: function (request, reply) {
+				reply(wolves);
+			});
+		}
+	},
+	{
+		method: ['PUT', 'POST'],
+		path: '/api/wolves/{name}',
+		handler(request, reply) {
+			const wolf = new Wolf({
+				name: request.params.name
+			});
+			wolf.save((error, wolf) => {
+				if (error) {
+					console.error(error);
+				}
 
-          console.log(request.params.name);
-          const wolf = new Wolf({
-              name: request.params.name
-          });
-          wolf.save(function(error, wolf) {
-            if (error) {
-                console.error(error);
-            }
-
-            reply(wolf.id);
-          });
-      }
-  }
+				reply(wolf.id);
+			});
+		}
+	}
 ];
