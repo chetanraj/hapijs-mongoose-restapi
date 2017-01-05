@@ -41,6 +41,7 @@ GET
 POST
 * http://localhost:4000/api/wolves/Coyote
 
+Ref: [Medium Post](https://medium.com/jsessentials/build-a-restful-api-using-hapijs-and-mongoose-4903590c5663)
 
 ---
 Made with ♥ by Chetan Raj
