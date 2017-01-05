@@ -1,4 +1,4 @@
-/*jshint esversion: 6 */
+// @flow
 
 const Hapi = require('hapi');
 
