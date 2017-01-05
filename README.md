@@ -3,6 +3,8 @@
 
 This is a boilerplate for creating a RESTful API using hapi.js and mongoose.
 
+This repo has been explained step by step in this [Medium Post](https://medium.com/jsessentials/build-a-restful-api-using-hapijs-and-mongoose-4903590c5663)
+
 [![bitHound Dependencies](https://www.bithound.io/github/chetanraj/hapijs-mongoose-restapi/badges/dependencies.svg)](https://www.bithound.io/github/chetanraj/hapijs-mongoose-restapi/master/dependencies/npm) [![Known Vulnerabilities](https://snyk.io/test/github/chetanraj/hapijs-mongoose-restapi/badge.svg)](https://snyk.io/test/github/chetanraj/hapijs-mongoose-restapi) [![Build Status](https://travis-ci.org/chetanraj/hapijs-mongoose-restapi.svg?branch=master)](https://travis-ci.org/chetanraj/hapijs-mongoose-restapi)
 
 ## Directory Layout
@@ -40,8 +42,6 @@ GET
 
 POST
 * http://localhost:4000/api/wolves/Coyote
-
-Ref: [Medium Post](https://medium.com/jsessentials/build-a-restful-api-using-hapijs-and-mongoose-4903590c5663)
 
 ---
 Made with ♥ by Chetan Raj
