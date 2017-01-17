@@ -5,9 +5,6 @@ This is a boilerplate for creating a RESTful API using hapi.js and mongoose. The
 
 [![bitHound Dependencies](https://www.bithound.io/github/chetanraj/hapijs-mongoose-restapi/badges/dependencies.svg)](https://www.bithound.io/github/chetanraj/hapijs-mongoose-restapi/master/dependencies/npm) [![Known Vulnerabilities](https://snyk.io/test/github/chetanraj/hapijs-mongoose-restapi/badge.svg)](https://snyk.io/test/github/chetanraj/hapijs-mongoose-restapi) [![Build Status](https://travis-ci.org/chetanraj/hapijs-mongoose-restapi.svg?branch=master)](https://travis-ci.org/chetanraj/hapijs-mongoose-restapi) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo) [![Coverage Status](https://coveralls.io/repos/github/chetanraj/hapijs-mongoose-restapi/badge.svg?branch=master)](https://coveralls.io/github/chetanraj/hapijs-mongoose-restapi?branch=master)
 
-
-[![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
-
 ## Directory Layout
 
 ```bash
