@@ -42,4 +42,4 @@ POST
 * http://localhost:4000/api/wolves/Coyote
 
 ---
-Made with ♥ by Chetan Raj
+Made with ♥ by Chetan
