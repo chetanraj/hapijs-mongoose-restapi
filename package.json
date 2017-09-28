@@ -6,7 +6,8 @@
   "license": "MIT",
   "dependencies": {
     "hapi": "^16.0.1",
-    "mongoose": "^4.7.1"
+    "mongoose": "^4.7.1",
+    "snyk": "^1.41.1"
   },
   "devDependencies": {
     "code": "^4.0.0",
@@ -21,6 +22,9 @@
     "xo": "xo",
     "flow": "flow",
     "test": "node_modules/lab/bin/lab",
-    "coveralls": "node_modules/lab/bin/lab -r lcov | node_modules/coveralls/bin/coveralls.js"
-  }
+    "coveralls": "node_modules/lab/bin/lab -r lcov | node_modules/coveralls/bin/coveralls.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
