@@ -10,6 +10,7 @@ server.connection({
 	port: port
 });
 
+const db = require('./database').db;
 const routes = require('./routes');
 
 server.route(routes);
