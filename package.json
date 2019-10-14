@@ -1,19 +1,16 @@
 {
-  "name": "hapijs-graphql-boilerplate",
-  "version": "1.0.0",
+  "name": "hapijs-mongoose-restapi",
+  "version": "2.0.0",
   "main": "app.js",
-  "author": "@chetan_raj",
+  "author": "Chetan Raj<chetan.narian@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "hapi": "^16.7.0",
-    "mongoose": "^4.13.17",
-    "snyk": "^1.41.1"
+    "@hapi/hapi": "^18.4.0",
+    "mongoose": "^4.13.19"
   },
   "devDependencies": {},
   "scripts": {
     "start": "node app.js",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
-  },
-  "snyk": true
+    "start:forever": "nodemon app.js"
+  }
 }

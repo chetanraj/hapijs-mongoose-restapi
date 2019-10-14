@@ -1,39 +1,41 @@
 'use strict';
 
-const Hapi = require('hapi');
+const Hapi = require('@hapi/hapi');
 
-const port = process.env.PORT || 4000;
-const server = new Hapi.Server();
-server.connection({
-	port: port
-});
 
-const db = require('./database').db;
-const routes = require('./routes');
+const init = async () => {
+	
+	const port = process.env.PORT || 4000;
+    const server = Hapi.server({
+        port,
+        host: 'localhost'
+	});
+	
+	const db = require('./database').db;
+	const routes = require('./routes');
 
-server.route(routes);
+	server.route(routes);
 
-server.route({
-	method: 'GET',
-	path: '/',
-	handler(request, reply) {
-		reply('Hello, world!');
-	}
-});
+	server.route({
+		method: 'GET',
+		path: '/',
+		handler: (request, h) => {
 
-server.route({
-	method: 'GET',
-	path: '/api',
-	handler(request, reply) {
-		reply('Hello, API!');
-	}
-});
+            return 'Hello World!';
+        }
+	});
 
-server.start(err => {
-	if (err) {
-		throw err;
-	}
-	console.log(`Server running at: ${server.info.uri}`);
-});
+	server.route({
+		method: 'GET',
+		path: '/api',
+		handler: (request, h) => {
 
-exports.server = server;
+            return 'Hello API!';
+        }
+	});
+
+    await server.start();
+    console.log('Server running on %s', server.info.uri);
+};
+
+init();
