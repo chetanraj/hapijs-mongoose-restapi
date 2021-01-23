@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:3.13
 
 # File Author / Maintainer
 LABEL authors="Chetan Raj <chetan.narian@gmail.com>"
