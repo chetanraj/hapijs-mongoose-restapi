@@ -6,7 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "@hapi/hapi": "^18.4.0",
-    "mongoose": "^5.7.5"
+    "mongoose": "^5.12.3"
   },
   "devDependencies": {},
   "scripts": {
