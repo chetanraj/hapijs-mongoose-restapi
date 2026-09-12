@@ -5,7 +5,7 @@
   "author": "Chetan Raj<chetan.narian@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@hapi/hapi": "^18.4.0",
+    "@hapi/hapi": "^21.0.0",
     "mongoose": "^5.7.5"
   },
   "devDependencies": {},
